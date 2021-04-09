@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 const routes: Routes = [
-  {path: 'customers', loadChildren: './customers/customers.module#CustomersModule'},
-  {path: 'orders', loadChildren: './orders/orders.module#OrdersModule'},
-  {path: 'messages', loadChildren: './messages/messages.module#MessagesModule'},
-  {path: '**', component: PageNotFoundComponent},
-  {path: '', redirectTo: '', pathMatch: 'full'}
+  { path: 'customers', loadChildren: () => import('src/app/customers/customers.module').then(m => m.CustomersModule) },
+  { path: 'orders', loadChildren: () => import('src/app/orders/orders.module').then(m => m.OrdersModule) },
+  { path: 'messages', loadChildren: () => import('src/app/messages/messages.module').then(m => m.MessagesModule) },
+  { path: '', redirectTo: '', pathMatch: 'full'}
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
