@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { MessageListComponent } from 'src/app/messages/message-list/message-list.component';
+
+const routes: Routes = [
+  {path: '', component: MessageListComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
