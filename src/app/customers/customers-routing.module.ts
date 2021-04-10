@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CustomerListComponent } from 'src/app/customers/customer-list/customer-list.component';
 
 const routes: Routes = [
-  {path: 'customer-list', component: CustomerListComponent }
+  {path: '', component: CustomerListComponent }
 ];
 
 @NgModule({
