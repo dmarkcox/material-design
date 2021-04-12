@@ -1,0 +1,15 @@
+.mat-card {
+  max-width: 300px;
+  margin: auto;
+}
+
+.material-icons.color_blue { color: #89CFF0; }
+
+.mat-card-avatar {
+  background-image: url('/assets/img/robby.png');
+  background-size: cover;
+}
+
+.mat-card-actions .flex-spacer {
+  width: 100%;
+}
