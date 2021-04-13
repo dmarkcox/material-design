@@ -1,0 +1,10 @@
+.mat-card {
+    width:600px;
+    margin:auto;
+}
+
+.mat-card .full-width {
+    width:100%;
+}
+
+.material-icons-color-blue { color: #89CFF0; }

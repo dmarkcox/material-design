@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
-import { MessageListComponent } from 'src/app/messages/message-list/message-list.component';
+import { Routes, RouterModule } from '@angular/router';
+import { MessageListComponent } from './message-list/message-list.component';
+import { MessageNewComponent } from './message-new/message-new.component';
 
 const routes: Routes = [
-  {path: '', component: MessageListComponent }
+  {
+    path: '',
+    component: MessageListComponent
+  },
+  {
+    path: 'message-new',
+    component: MessageNewComponent
+  }
 ];
 
 @NgModule({

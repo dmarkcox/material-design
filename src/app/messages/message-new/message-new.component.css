@@ -1,0 +1,10 @@
+.mat-stepper-horizontal {
+    max-width:600px;
+    margin:auto;
+}
+
+.mat-stepper-horizontal .mat-form-field {
+    width:100%;
+}
+
+.material-icons-color-blue { color: #89CFF0; }
