@@ -10,7 +10,8 @@ const routes: Routes = [
   {
     path: 'customer-new',
     component: CustomerNewComponent
-  }
+  },
+
 ];
 
 @NgModule({

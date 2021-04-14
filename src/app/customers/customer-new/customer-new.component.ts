@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 @Component({
   selector: 'app-customer-new',
@@ -9,6 +10,7 @@ import { FormControl, Validators } from '@angular/forms';
 
 export class CustomerNewComponent implements OnInit {
   emailFormControl: FormControl;
+  matcher: ErrorStateMatcher;
 
   constructor() { }
 
