@@ -9,21 +9,21 @@
           Please enter a valid email address
         </mat-error>
       </mat-form-field>
-      <mat-form-field class="full-width">
+      <mat-form-field>
         <input matInput placeholder="First">
       </mat-form-field>
-      <mat-form-field class="full-width">
+      <mat-form-field>
         <input matInput placeholder="Last">
       </mat-form-field>
       <mat-form-field class="full-width">
         <textarea matInput placeholder="Address"></textarea>
       </mat-form-field>
-      <mat-form-field class="full-width">
+      <mat-form-field>
         <span matPrefix>+1</span>
         <input matInput placeholder="Phone">
         <mat-icon class="material-icons-color-blue" matSuffix>phone</mat-icon>
       </mat-form-field>
-      <mat-form-field class="full-width">
+      <mat-form-field>
         <span matPrefix>+1</span>
         <input matInput placeholder="Fax">
         <mat-icon class="material-icons-color-blue" matSuffix>phone</mat-icon>
@@ -31,5 +31,6 @@
     </form>
   </mat-card-content>
   <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="openRepDialog()">SAVE</button>
   </mat-card-actions>
 </mat-card>

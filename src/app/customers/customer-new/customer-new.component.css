@@ -8,3 +8,7 @@
 }
 
 .material-icons-color-blue { color: #89CFF0; }
+.mat-card .mat-card-actions {
+    display:block;
+    text-align:right;
+}
